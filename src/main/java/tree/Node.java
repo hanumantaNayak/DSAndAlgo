@@ -28,5 +28,5 @@ public class Node {
         return this.right;
     }
     public void setLeft(Node node){ this.left = node;}
-    public void setRight(Node node){this.right = right;}
+    public void setRight(Node node){this.right = node;}
 }

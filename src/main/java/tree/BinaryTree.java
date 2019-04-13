@@ -12,6 +12,9 @@ public class BinaryTree {
     public Node getRoot(){
         return this.root;
     }
+    public void setRoot(Node node){
+        this.root = node;
+    }
 
     public void addNode(int data) {
         Node node = new Node(data);
@@ -32,6 +35,21 @@ public class BinaryTree {
             prev.setLeft(node);
         else
             prev.setRight(node);
+    }
 
+    public void display(){
+        if(this.root == null){
+            System.out.println("Tree is empty!");
+            return;
+        }
+        display(this.root);
+    }
+    public void display(Node node){
+        if(node == null)
+            return;
+        System.out.print(node.getData()+" ");
+        display(node.getLeft());
+        display(node.getRight());
     }
 }
+
