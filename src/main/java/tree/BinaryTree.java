@@ -44,7 +44,7 @@ public class BinaryTree {
         }
         display(this.root);
     }
-    public void display(Node node){
+    private void display(Node node){
         if(node == null)
             return;
         System.out.print(node.getData()+" ");
