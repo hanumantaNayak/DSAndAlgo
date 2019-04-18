@@ -9,8 +9,8 @@ public class HeightOfBinarytree {
         if(Objects.isNull(root)){
             return 0;
         }
-        return maxDepthByRecursive(root);
-      //  return maxDepthByIterative(root);
+       // return maxDepthByRecursive(root);
+        return maxDepthByIterative(root);
     }
 
     private int maxDepthByRecursive(Node root){
@@ -47,9 +47,9 @@ public class HeightOfBinarytree {
 
     public static void main(String[] args) {
         BinaryTree bt = new BinaryTree();
-        bt.addNode(1);
-        bt.addNode(2);
         bt.addNode(3);
+        bt.addNode(2);
+        bt.addNode(1);
         bt.addNode(4);
         bt.addNode(5);
         HeightOfBinarytree hbt = new HeightOfBinarytree();
